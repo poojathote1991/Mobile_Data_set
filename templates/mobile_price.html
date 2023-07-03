@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Price Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body style="background-color: rgb(128, 119, 0);">
+    <img src="daimond.jpg" alt="daimond" width="500">
+    <h1> Mobile Price Prediction </h1>
+    <form method="GET" action="/predicted_price">
+        <label for="Sale">Sale:</label>
+        <input type="text" name="Sale" id="Sale">
+        <br>
+        <br>
+        <label for="weight">Weight:</label>
+        <input type="text" name="weight" id="weight">
+        <br>
+        <br>
+        <label for="resoloution">Resolution:</label>
+        <input type="text" name="resoloution" id="resoloution">
+        <br>
+        <br>
+        <label for="ppi">PPI:</label>
+        <input type="text" name="ppi" id="ppi">
+        <br>
+        <br>
+        <label for="cpu_core">CPU_core:</label>
+        <input type="text" name="cpu_core" id="cpu_core">
+        <br>
+        <br>
+        <label for="cpu_freq">CPU_preg:</label>
+        <input type="text" name="cpu_freq" id="cpu_freq">
+        <br>
+        <br>
+        <label for="internal_mem">Internal_mem:</label>
+        <input type="text" name="internal_mem" id="internal_mem">
+        <br>
+        <br>
+        <label for="ram">Ram:</label>
+        <input type="text" name="ram" id="ram">
+        <br>
+        <br>
+        <label for="RearCam">RearCam:</label>
+        <input type="text" name="RearCam" id="RearCam">
+        <br>
+        <br>
+        <label for="Front_Cam">Front_Cam:</label>
+        <input type="text" name="Front_Cam" id="Front_Cam">
+        <br>
+        <br>
+        <label for="battery">Battery:</label>
+        <input type="text" name="battery" id="battery">
+        <br>
+        <br>
+        <label for="thickness">Thickness:</label>
+        <input type="text" name="thickness" id="thickness">
+        <br>
+        <br>
+
+        <input type="submit" value="SUBMIT">
+        <br>
+        <br>
+        <h4><strong>Your Mobile predicted price will be <b> {{ prediction }} / Rs.</b> Only </strong></h4>
+    </form>
+
+</body>
+
+</html>
